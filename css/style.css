@@ -34,7 +34,7 @@ main {
 
 .main-container {
     width: 90%;
-    height: 24rem;
+    height: 25rem;
     background: var(--box-bgrd-color);
     border-radius: 1rem;
 }
