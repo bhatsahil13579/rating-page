@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root {
+    --Orange: #fb7413;
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: #7c8798;
+    --Dark-Blue: hsl(213, 20%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Family: 'Overpass', sans-serif;
+    --box-bgrd-color: linear-gradient(180deg, rgba(31, 38, 48, 1) 0%, rgba(23, 30, 40, 1) 0%);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 90%;
+    height: 24rem;
+    background: var(--box-bgrd-color);
+    border-radius: 1rem;
+}
+
+.image1 {
+    margin: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(25, 97%, 53%, 0.1);
+}
+
+.para {
+    margin: 1.8rem;
+    color: white;
+    font-family: var(--Family);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.para-2 {
+    margin: 1.8rem;
+    color: var(--Medium-Grey);
+    font-family: var(--Family);
+    font-size: 14px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--Light-Grey);
+    font-weight: 700;
+    font-family: var(--Family);
+}
+
+
+
+.circle {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c879833;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+ul li :hover {
+
+    background-color: #fb7413;
+}
+
+ul li :focus {
+    background-color: var(--Medium-Grey);
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.after {
+    background-color: hsl(216, 12%, 8%);
+}
+
+.submit button {
+    width: 80%;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: var(--Medium-Grey);
+    font-family: var(--Family);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+}
+
+.container2 {
+    display: none;
+    width: 95%;
+    height: 25.5rem;
+    background: var(--box-bgrd-color);
+    border-radius: 1rem;
+
+
+}
+
+
+.image2 {
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.para4 {
+
+    width: 93%;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--Medium-Grey);
+    font-family: var(--Family);
+    font-size: 18px;
+    padding-left: 1.7rem;
+}
+
+.container2 h3 {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-family: var(--Family);
+    font-size: 20px;
+}
+
+.para3 {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    color: hsl(25, 97%, 53%, 0.7);
+    font-weight: 400;
+    font-family: var(--Family);
+    background-color: hsl(25, 97%, 53%, 0.1);
+    border-radius: 1rem;
+}
+
+#rate {
+
+    margin-inline: 5px;
+
+}
+
+
+@media (min-width:512px) {
+    .main-container {
+        max-width: 400px;
+    }
+
+    .container2 {
+        max-width: 400px;
+    }
+}
