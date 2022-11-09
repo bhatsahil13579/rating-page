@@ -23,7 +23,7 @@ button.addEventListener("click", (click) => {
 
    if (click) {
 
-      click = setTimeout(reset, 2000)
+      click = setTimeout(reset, 1000)
    }
 
    function reset() {
